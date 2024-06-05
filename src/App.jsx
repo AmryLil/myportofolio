@@ -9,9 +9,10 @@ function App() {
   const aboutRef = useRef();
   const homeRef = useRef();
   const portofolioRef = useRef();
+  const contactRef = useRef();
   return (
     <>
-      <div className="h-screen overflow-y-auto no-scrollbar scroll-snap-y ">
+      <div className="h-screen overflow-y-auto no-scrollbar scroll-snap-y">
         <Navbar
           onClickAbout={() => {
             aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -22,21 +23,24 @@ function App() {
           onClickPortofolio={() => {
             portofolioRef.current.scrollIntoView({ behavior: "smooth" });
           }}
+          onClickContact={() => {
+            contactRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
         />
-        <div ref={homeRef} className="h-fit snap-center">
+        <div ref={homeRef} className="min-h-screen snap-center">
           <Home />
         </div>
 
-        <div ref={aboutRef} className="h-fit snap-end pt-20 pb-20">
+        <div ref={aboutRef} className="min-h-screen snap-end pt-20 pb-20">
           <About />
         </div>
         <div
           ref={portofolioRef}
-          className="md:h-[170%] h-[440%] snap-end pt-10"
+          className="min-h-screen snap-end pt-10 overflow-auto no-scrollbar"
         >
           <Portofolio />
         </div>
-        <div className="h-[150%] md:h-full snap-center pt-12 pb-20 ">
+        <div ref={contactRef} className="min-h-screen snap-center pt-12 pb-20 ">
           <Contact />
         </div>
       </div>

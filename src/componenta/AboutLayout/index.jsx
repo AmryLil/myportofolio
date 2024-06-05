@@ -1,44 +1,71 @@
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import SkillCard from "./card";
 
 const AboutLayout = () => {
-  const skillsData = [
+  const TechStackArray = [
     {
       title: "HTML",
-      src: "../public/images/html.png",
+      src: "images/html.png",
       level: "Advanced",
     },
-    { title: "CSS", src: "../public/images/css.png", level: "Advanced" },
+    { title: "CSS", src: "images/css.png", level: "Advanced" },
     {
       title: "JavaScript",
-      src: "../public/images/javascript.png",
+      src: "images/javascript.png",
       level: "Intermediate",
     },
     {
       title: "ReactJS",
-      src: "../public/images/reactjs.png",
+      src: "images/reactjs.png",
       level: "Intermediate",
     },
-    { title: "Node.js", src: "../public/images/nodejs.png", level: "Beginner" },
-    { title: "NextJS", src: "../public/images/nextjs.png", level: "Beginner" },
-    { title: "Golang", src: "../public/images/golang.png", level: "Beginner" },
-    { title: "Gin Gonic", src: "../public/images/gin.png", level: "Beginner" },
-    { title: "JWT Auth", src: "../public/images/jwt.png", level: "Beginner" },
-    { title: "Python", src: "../public/images/python.png", level: "Beginner" },
+    { title: "Node.js", src: "images/nodejs.png", level: "Beginner" },
+    { title: "NextJS", src: "images/nextjs.png", level: "Beginner" },
+    { title: "Golang", src: "images/golang.png", level: "Beginner" },
+    { title: "Gin Gonic", src: "images/gin.png", level: "Beginner" },
+    { title: "JWT Auth", src: "images/jwt.png", level: "Beginner" },
+    { title: "Python", src: "images/python.png", level: "Beginner" },
     {
       title: "Tailwind",
-      src: "../public/images/tailwind.png",
+      src: "images/tailwind.png",
       level: "Beginner",
     },
-    { title: "PHP", src: "../public/images/php.png", level: "Beginner" },
-    { title: "MySQL", src: "../public/images/mysql.png", level: "Beginner" },
-    { title: "Django", src: "../public/images/django.png", level: "Beginner" },
+    { title: "PHP", src: "images/php.png", level: "Beginner" },
+    { title: "MySQL", src: "images/mysql.png", level: "Beginner" },
+    { title: "Django", src: "images/django.png", level: "Beginner" },
     {
       title: "Restfull API",
-      src: "../public/images/restful.png",
+      src: "images/restful.png",
       level: "Beginner",
     },
   ];
+  const ToolsDataArray = [
+    {
+      title: "Git",
+      src: "images/git.png",
+      level: "Advanced",
+    },
+    { title: "Github", src: "images/github.png", level: "Advanced" },
+    {
+      title: "NPM",
+      src: "images/npm.png",
+      level: "Intermediate",
+    },
+    {
+      title: "Postman",
+      src: "images/postman.png",
+      level: "Intermediate",
+    },
+    { title: "Android Studio", src: "images/android.png", level: "Beginner" },
+    { title: "VS Code", src: "images/vscode.png", level: "Beginner" },
+  ];
+
+  const [skillsData, setSkillsData] = useState(TechStackArray);
+
+  const handleBtnSkills = (data) => {
+    return () => setSkillsData(data);
+  };
 
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
@@ -65,11 +92,7 @@ const AboutLayout = () => {
                 : ""
             }`}
           >
-            <img
-              src="../public/images/photoabout.jpg"
-              alt=""
-              className="w-full"
-            />
+            <img src="images/photoabout.jpg" alt="" className="w-full" />
           </div>
           <div className="md:w-[60%] w-full px-10 flex flex-col gap-3 md:justify-center text-justify -translate-y-1">
             <div
@@ -111,10 +134,16 @@ const AboutLayout = () => {
           <div className="h-0.5 w-40 bg-slate-50"></div>
         </div>
         <div className="flex gap-4">
-          <button className="px-5 py-1.5 rounded bg-white/10 text-slate-50 font-semibold text-sm hover:bg-green-500 hover:scale-110 hover:shadow-off hover:shadow-green-500 transition-all hover:text-slate-900">
+          <button
+            onClick={handleBtnSkills(TechStackArray)}
+            className="px-5 py-1.5 rounded bg-white/10 text-slate-50 font-semibold text-sm hover:bg-green-500 hover:scale-110 hover:shadow-off hover:shadow-green-500 transition-all hover:text-slate-900"
+          >
             Tech Stack
           </button>
-          <button className="px-5 py-1.5 rounded bg-white/10 text-slate-50 font-semibold text-sm hover:bg-green-500 hover:scale-110 hover:shadow-off hover:shadow-green-500 transition-all hover:text-slate-900">
+          <button
+            onClick={handleBtnSkills(ToolsDataArray)}
+            className="px-5 py-1.5 rounded bg-white/10 text-slate-50 font-semibold text-sm hover:bg-green-500 hover:scale-110 hover:shadow-off hover:shadow-green-500 transition-all hover:text-slate-900"
+          >
             Tools
           </button>
         </div>
@@ -129,7 +158,7 @@ const AboutLayout = () => {
                 title={skill.title}
                 src={skill.src}
                 level={skill.level}
-                Classname={"animate-fade-up animate-duration-[800ms]"}
+                Classname={"animate-fade-up animate-duration-[800ms] "}
                 style={{ animationDelay: `${index * 0.1}s` }}
               />
             ))}

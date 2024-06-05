@@ -8,6 +8,7 @@ export default {
     extend: {
       boxShadow: {
         off: "0 0px 20px 3px rgba(0, 0, 0, 0.3)",
+        tipis: "0 0px 7px 0px rgba(0, 0, 0, 0.1)",
         on: "0 10px 80px 20px rgba(0, 0, 0, 0.3)",
       },
       fontFamily: {

@@ -10,16 +10,19 @@ const HomeLayouts = () => {
             <div className="md:text-5xl text-2xl font-bold text-gray-50">
               Hi, It's <span className="text-green-500">Ulil Amry AQ</span>
             </div>
-            <div className="md:text-2xl text-lg font-bold text-gray-50 mt-2">
+            <div className="md:text-2xl text-lg font-bold text-green-500 mt-2">
+              <span className="md:text-3xl text-xl text-gray-50">
+                I,m a {` `}
+              </span>
               <TypeAnimation
                 sequence={[
-                  "I,m a Student",
+                  "Student",
                   1500,
-                  "I,m a Backend Web Dev",
+                  "Backend Web Dev",
                   1500,
-                  "I,m a Fullstack Web Dev",
+                  "Fullstack Web Dev",
                   1500,
-                  "I,m a Frontend Web Dev",
+                  "Frontend Web Dev",
                   1500,
                 ]}
                 wrapper="span"
@@ -33,19 +36,27 @@ const HomeLayouts = () => {
             Keep learning and growing every day to build a brighter future
             filled with endless opportunities and success.
           </div>
-          <div className=" flex gap-4 text-gray-50">
-            <a href="#">
-              <FaLinkedin size={20} className="socmed" />
-            </a>
-            <a href="https://github.com/AmryLil">
-              <FaGithub size={20} className="socmed" />
-            </a>
-            <a href="https://www.instagram.com/amrylil_/">
-              <FaInstagram size={20} className="socmed" />
-            </a>
-            <a href="mailto:ulilamry432@gmail.com">
-              <FaGoogle size={20} className="socmed" />
-            </a>
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-1">
+              <h1 className="font-semibold text-white tracking-wider text-sm">
+                Socmed
+              </h1>
+              <div className="h-[2px] bg-green-500 w-[53%]"></div>
+            </div>
+            <div className=" flex gap-4 text-gray-50">
+              <a href="#">
+                <FaLinkedin size={20} className="socmed" />
+              </a>
+              <a href="https://github.com/AmryLil">
+                <FaGithub size={20} className="socmed" />
+              </a>
+              <a href="https://www.instagram.com/amrylil_/">
+                <FaInstagram size={20} className="socmed" />
+              </a>
+              <a href="mailto:ulilamry432@gmail.com">
+                <FaGoogle size={20} className="socmed" />
+              </a>
+            </div>
           </div>
           <a
             href="https://drive.usercontent.google.com/u/0/uc?id=1lUdaToPidUlRyguTge-901A2JHJxSp-r&export=download"
@@ -55,9 +66,9 @@ const HomeLayouts = () => {
           </a>
         </div>
         <div className="relative md:p-8 p-6 ">
-          <div className=" md:h-[300px] md:w-[300px] h-[200px] w-[200px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] bg-gray-800 p-2">
+          <div className=" shadow-tipis shadow-green-500 md:h-[300px] md:w-[300px] h-[200px] w-[200px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] bg-gray-800 p-2">
             <img
-              src="../images/photo3.png"
+              src="images/photo3.png"
               alt="photo"
               className="overflow-hidden z-40 filter brightness-90  shadow-inner 0"
             />

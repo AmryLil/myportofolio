@@ -8,42 +8,42 @@ const projects = [
     description:
       "My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.",
     techStack: ["JavaScript", "Tailwind", "ReactJs"],
-    imageUrl: "../public/images/projectPic/portofolio1.png",
+    imageUrl: "images/projectPic/portofolio1.png",
   },
   {
     title: "Pixture",
     description:
       "A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.",
     techStack: ["NextJs", "JavaScript", "Html", "Tailwind", "Golang", "Gin"],
-    imageUrl: "../public/images/projectPic/pixture.png",
+    imageUrl: "images/projectPic/pixture.png",
   },
   {
     title: "Bapukpedia",
     description:
       "A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.",
     techStack: ["Html", "Tailwind", "Javascript", "Python", "Django"],
-    imageUrl: "../public/images/projectPic/Bapukpedia.png",
+    imageUrl: "images/projectPic/bapukpedia.png",
   },
   {
     title: "School Website",
     description:
       "A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.",
     techStack: ["Html", "Css", "Javascript", "PHP", "Mysql"],
-    imageUrl: "../public/images/projectPic/school.png",
+    imageUrl: "images/projectPic/school.png",
   },
   {
     title: "Music Player App UI UX",
     description:
       "A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.",
     techStack: ["Canva"],
-    imageUrl: "../public/images/projectPic/UIUX.jpg",
+    imageUrl: "images/projectPic/UIUX.jpg",
   },
   {
     title: "Music Player Mobile App",
     description:
       "A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.",
     techStack: ["Kotlin", "XML", "Media Player"],
-    imageUrl: "../public/images/projectPic/mobileapp.jpg",
+    imageUrl: "images/projectPic/mobileapp.jpg",
   },
 ];
 let dly = 0;
@@ -63,7 +63,7 @@ const PortofolioLayout = () => {
         </h1>
         <div className="h-1 bg-green-500 w-[60%] translate-y-1 md:block hidden"></div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:rounded rounded-md">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:rounded rounded-md ">
         {inView &&
           projects.map((project, index) => (
             <ProjectCard
