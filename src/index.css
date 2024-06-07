@@ -14,7 +14,7 @@
     @apply hover:text-green-400 cursor-pointer transition-all hover:scale-105;
   }
   .border_siku {
-    @apply md:h-28 md:w-28 h-16 w-16 border-green-600 hover:drop-shadow-xl cursor-pointer
+    @apply md:h-24 md:w-24 h-16 w-16 border-green-600 hover:drop-shadow-xl cursor-pointer
      animate-once animate-delay-[600ms];
   }
 }

@@ -86,13 +86,13 @@ const AboutLayout = () => {
         <div className="flex gap-12 md:flex-row flex-col justify-center items-center">
           <div
             ref={aboutRef}
-            className={`md:h-80 md:w-80 h-60 w-60 rounded-full overflow-hidden shadow-sm hover:shadow-off  transition-all  border-4 border-slate-200  ${
+            className={`md:h-80 md:w-80 h-60 w-60 rounded-full overflow-hidden  hover:shadow-off  transition-all  border-[4px] border-slate-200 shadow-tipis shadow-green-500 brightness-90 ${
               aboutInView
                 ? "animate-fade-right animate-duration-1000 animate-delay-200"
                 : ""
             }`}
           >
-            <img src="images/photoabout.jpg" alt="" className="w-full" />
+            <img src="images/lil2.jpeg" alt="" className="w-full" />
           </div>
           <div className="md:w-[60%] w-full px-10 flex flex-col gap-3 md:justify-center text-justify -translate-y-1">
             <div
@@ -131,7 +131,7 @@ const AboutLayout = () => {
       <div className=" flex flex-col gap-7 mt-3">
         <div className="flex items-center text-slate-50 gap-1">
           <div className="text-lg">Skills</div>
-          <div className="h-0.5 w-40 bg-slate-50"></div>
+          <div className="h-0.5 w-40 bg-green-500"></div>
         </div>
         <div className="flex gap-4">
           <button
@@ -149,7 +149,7 @@ const AboutLayout = () => {
         </div>
         <div
           ref={skillsRef}
-          className={`grid md:grid-cols-5 gap-8 grid-cols-2`}
+          className={`grid md:grid-cols-5 md:gap-8 gap-5 grid-cols-2`}
         >
           {skillsInView &&
             skillsData.map((skill, index) => (

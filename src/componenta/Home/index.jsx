@@ -66,17 +66,17 @@ const HomeLayouts = () => {
           </a>
         </div>
         <div className="relative md:p-8 p-6 ">
-          <div className=" shadow-tipis shadow-green-500 md:h-[300px] md:w-[300px] h-[200px] w-[200px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] bg-gray-800 p-2">
+          <div className=" shadow-tipis shadow-green-500 md:h-[300px] md:w-[300px] h-[200px] w-[200px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] rounded-lg bg-white/10">
             <img
               src="images/photo3.png"
               alt="photo"
               className="overflow-hidden z-40 filter brightness-90  shadow-inner 0"
             />
           </div>
-          <div className="border_siku border-t-4 border-l-4 absolute top-0 start-0 animate-fade-right"></div>
-          <div className="border_siku border-t-4 border-r-4 absolute top-0 end-0 animate-fade-left"></div>
-          <div className="border_siku border-b-4 border-l-4 absolute bottom-0 start-0 animate-fade-right"></div>
-          <div className="border_siku border-b-4 border-r-4 absolute bottom-0 end-0 animate-fade-left"></div>
+          <div className="border_siku border-t-4 border-l-4 absolute top-0 start-0 animate-fade-right  shadow-green-500 rounded-lg"></div>
+          <div className="border_siku border-t-4 border-r-4 absolute top-0 end-0 animate-fade-left rounded-lg"></div>
+          <div className="border_siku border-b-4 border-l-4 absolute bottom-0 start-0 animate-fade-right rounded-lg"></div>
+          <div className="border_siku border-b-4 border-r-4 absolute bottom-0 end-0 animate-fade-left rounded-lg"></div>
         </div>
       </div>
     </div>
