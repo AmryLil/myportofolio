@@ -12,7 +12,7 @@ const HomeLayouts = () => {
             </div>
             <div className="md:text-2xl text-lg font-bold text-green-500 mt-2">
               <span className="md:text-3xl text-xl text-gray-50">
-                I,m a {` `}
+                I'm a {` `}
               </span>
               <TypeAnimation
                 sequence={[
@@ -59,7 +59,7 @@ const HomeLayouts = () => {
             </div>
           </div>
           <a
-            href="https://drive.usercontent.google.com/u/0/uc?id=1lUdaToPidUlRyguTge-901A2JHJxSp-r&export=download"
+            href="https://export-download.canva.com/DtThY/DAGHjlDtThY/90/0-1285082337035381457.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240608%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240608T010629Z&X-Amz-Expires=72629&X-Amz-Signature=100dee11ff0710e491bad4c55bc7a37bdc1b57627b8a9ca6d5d2989f5fc49aca&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Ulil%2520Amry%2520CV.pdf&response-expires=Sat%2C%2008%20Jun%202024%2021%3A16%3A58%20GMT"
             className="transition-all w-40 px-4 py-1 rounded-lg border border-green-700 font-bold tracking-wide text-gray-50 hover:bg-green-600 hover:shadow-off hover:shadow-green-700 text-center"
           >
             Download CV
