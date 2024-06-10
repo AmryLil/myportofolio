@@ -44,7 +44,7 @@ const HomeLayouts = () => {
               <div className="h-[2px] bg-green-500 w-[53%]"></div>
             </div>
             <div className=" flex gap-4 text-gray-50">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ulil-amry-363a841b3/">
                 <FaLinkedin size={20} className="socmed" />
               </a>
               <a href="https://github.com/AmryLil">

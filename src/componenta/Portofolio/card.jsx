@@ -2,11 +2,19 @@
 
 import React from "react";
 
-const ProjectCard = ({ title, description, techStack, imageUrl, style }) => {
+const ProjectCard = ({
+  title,
+  description,
+  techStack,
+  imageUrl,
+  style,
+  url,
+}) => {
   return (
-    <div
+    <a
+      href={url}
       style={style}
-      className={`max-w-sm  overflow-hidden shadow-lg bg-gray-800 text-white border border-green-500 cursor-pointer transition-all rounded-md animate-fade-up animate-duration-[800ms] hover:shadow-off hover:shadow-green-500`}
+      className={`w-full  overflow-hidden shadow-lg bg-gray-800 text-white border border-green-500 cursor-pointer transition-all rounded-md animate-fade-up animate-duration-[800ms] hover:shadow-off hover:shadow-green-500`}
     >
       <div className="w-full ">
         <img className="w-full" src={imageUrl} alt={`${title} screenshot`} />
@@ -25,7 +33,7 @@ const ProjectCard = ({ title, description, techStack, imageUrl, style }) => {
           </span>
         ))}
       </div>
-    </div>
+    </a>
   );
 };
 
