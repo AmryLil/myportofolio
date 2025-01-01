@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaGithub, FaGoogle, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
@@ -8,23 +9,14 @@ const HomeLayouts = () => {
         <div className="md:w-[55%] w-full flex flex-col gap-y-5 animate-fade-right justify-center md:justify-start items-center md:items-start ">
           <div>
             <div className="md:text-5xl text-2xl font-bold text-gray-50">
-              Hi, It's <span className="text-green-500">Ulil Amry AQ</span>
+              Hi, It's <span className="text-green-500 ">Ulil Amry AQ</span>
             </div>
             <div className="md:text-2xl text-lg font-bold text-green-500 mt-2">
               <span className="md:text-3xl text-xl text-gray-50">
                 I'm a {` `}
               </span>
               <TypeAnimation
-                sequence={[
-                  "Student",
-                  1500,
-                  "Backend Web Dev",
-                  1500,
-                  "Fullstack Web Dev",
-                  1500,
-                  "Frontend Web Dev",
-                  1500,
-                ]}
+                sequence={["Student", 1500, "Web Development", 1500]}
                 wrapper="span"
                 speed={20}
                 style={{ display: "inline-block" }}
@@ -66,17 +58,40 @@ const HomeLayouts = () => {
           </a>
         </div>
         <div className="relative md:p-8 p-6 ">
-          <div className=" shadow-tipis shadow-green-500 md:h-[300px] md:w-[300px] h-[200px] w-[200px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] rounded-lg bg-white/10">
+          <div className=" shadow-tipis  md:h-[400px] md:w-[400px] h-[230px] w-[230px] overflow-hidden   transition-all animate-fade-up animate-once animate-duration-[1000ms] rounded-lg mix-blend-lighten">
             <img
-              src="images/photo3.png"
+              src="images/anuku2.png"
               alt="photo"
-              className="overflow-hidden z-40 filter brightness-90  shadow-inner 0"
+              className="overflow-hidden z-40 filter  brightness-90 shadow-inner 0 "
             />
           </div>
-          <div className="border_siku border-t-4 border-l-4 absolute top-0 start-0 animate-fade-right  shadow-green-500 rounded-lg"></div>
-          <div className="border_siku border-t-4 border-r-4 absolute top-0 end-0 animate-fade-left rounded-lg"></div>
-          <div className="border_siku border-b-4 border-l-4 absolute bottom-0 start-0 animate-fade-right rounded-lg"></div>
-          <div className="border_siku border-b-4 border-r-4 absolute bottom-0 end-0 animate-fade-left rounded-lg"></div>
+
+          <motion.svg
+            className="transition-all animate-fade-up animate-once animate-duration-[1000ms] md:w-[390px] w-[250px] absolute md:top-14 md:right-9 top-7 right-3"
+            fill="transparent"
+            viewBox="0 0 506 506"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.circle
+              cy="253"
+              cx="253"
+              r="250"
+              stroke="#15803d"
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ strokeDasharray: "24 10 0 0" }}
+              animate={{
+                strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+                rotate: [120, 360],
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            ></motion.circle>
+          </motion.svg>
         </div>
       </div>
     </div>

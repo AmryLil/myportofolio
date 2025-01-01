@@ -1,34 +1,62 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const ContactUs = () => {
+  const { ref: mainRef, inView: mainView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <div className="container  text-slate-50 flex md:px-28 px-6 items-center justify-center">
       <div className="container md:mx-auto ">
         <div className="text-center mb-12"></div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center" ref={mainRef}>
           <div className="w-full lg:w-1/2">
             <h1 className="md:text-5xl font-bold text-3xl">
               Contact Us<span className="text-green-500">.</span>
             </h1>
-            <div className="flex flex-row items-center pl-2">
-              <div className="md:w-1 md:h-64 bg-green-500 md:block hidden"></div>
-              <div className="p-8 rounded-lg shadow-lg">
-                <h2 className="md:text-xl text-lg font-semibold mb-4">
-                  My Address
-                </h2>
-                <p className="mb-2 text-sm">
-                  Jl. Perintis Kemerdekaan 7, Tamalanrea Indah,
-                </p>
-                <p className="mb-2 text-sm">
-                  {" "}
-                  Tamalanrea District, Makassar City, South Sulawesi, Indonesia
-                </p>
-                <h2 className="md:text-xl text-lg font-semibold mb-4 mt-4">
-                  Contact
-                </h2>
-                <p className="mb-4 text-sm">ulilamry432@gmail.com</p>
-                <p className="mb-4 text-sm">+62 823 7839 8419</p>
-              </div>
+            <div className="flex flex-row  pl-2">
+              {mainView && (
+                <>
+                  <motion.div
+                    initial={{ height: 30 }}
+                    animate={{ height: 260 }}
+                    transition={{ duration: 1 }}
+                    className="md:w-1  bg-green-500 md:block hidden mt-6"
+                  ></motion.div>
+                  <motion.div className="p-8 rounded-lg shadow-lg">
+                    <motion.div
+                      initial={{ y: 100 }}
+                      animate={{ y: 0 }}
+                      transition={{ duration: 1 }}
+                    >
+                      <h2 className="md:text-xl text-lg font-semibold mb-4">
+                        My Address
+                      </h2>
+                      <p className="mb-2 text-sm">
+                        Jl. Perintis Kemerdekaan 7, Tamalanrea Indah,
+                      </p>
+                      <p className="mb-2 text-sm">
+                        {" "}
+                        Tamalanrea District, Makassar City, South Sulawesi,
+                        Indonesia
+                      </p>
+                    </motion.div>
+                    <motion.div
+                      initial={{ y: 100 }}
+                      animate={{ y: 0 }}
+                      transition={{ duration: 1, delay: 0.2 }}
+                    >
+                      <h2 className="md:text-xl text-lg font-semibold mb-4 mt-7">
+                        Contact
+                      </h2>
+                      <p className="mb-4 text-sm">ulilamry432@gmail.com</p>
+                      <p className="mb-4 text-sm">+62 823 7839 8419</p>
+                    </motion.div>
+                  </motion.div>
+                </>
+              )}
             </div>
           </div>
           <div className="w-full md:w-[50%] md:px-10 px-2 py-2">

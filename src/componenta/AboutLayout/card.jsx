@@ -7,7 +7,7 @@ const SkillCard = ({ title, src, style, Classname }) => {
       <img
         src={src}
         alt={title}
-        className={`w-8 h-8 object-contain filter brightness-110 `}
+        className={`w-8 h-8 object-contain filter  drop-shadow-[1px_1px_0_rgba(0,0,0,1)]`}
       />
       <div className="text-sm font-bold">{title}</div>
       {/* <div className="text-xs">{level}</div> */}

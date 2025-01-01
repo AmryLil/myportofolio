@@ -34,10 +34,7 @@ function App() {
         <div ref={aboutRef} className="min-h-screen snap-end pt-20 pb-20">
           <About />
         </div>
-        <div
-          ref={portofolioRef}
-          className="min-h-screen snap-end pt-10 overflow-auto no-scrollbar"
-        >
+        <div ref={portofolioRef} className=" snap-end pt-10 no-scrollbar">
           <Portofolio />
         </div>
         <div ref={contactRef} className="min-h-screen snap-center pt-12 pb-20 ">
