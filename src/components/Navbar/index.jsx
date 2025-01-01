@@ -14,8 +14,8 @@ const Navbar = ({
     setBtnMenu(!btnMenu);
   };
   return (
-    <div className="w-full flex justify-center ">
-      <nav className="flex w-full md:px-56 px-6  py-5 justify-between fixed z-10 bg-opacity-80 bg-gray-900 backdrop-blur-sm ">
+    <div className="w-full flex justify-center">
+      <nav className="flex w-full md:px-36 px-6  py-5 justify-between fixed z-10 bg-opacity-80 bg-gray-900 backdrop-blur-sm ">
         <div className="text-gray-50 text-xl font-bold">
           Lil
           <span
