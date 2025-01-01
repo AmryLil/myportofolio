@@ -1,4 +1,4 @@
-import HomeLayouts from "../componenta/Home";
+import HomeLayouts from "../components/Home";
 
 const Home = () => {
   return (

@@ -1,10 +1,10 @@
 import React, { forwardRef } from "react";
-import ContactUs from "../componenta/Contact";
+import ContactUs from "../components/Contact";
 
 const Contact = forwardRef(() => {
   return (
     <>
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 });

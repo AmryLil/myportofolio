@@ -1,4 +1,4 @@
-import PortofolioLayout from "../componenta/Portofolio";
+import PortofolioLayout from "../components/Portofolio";
 
 const Portofolio = () => {
   return <PortofolioLayout />;

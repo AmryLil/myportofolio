@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import AboutLayout from "../componenta/AboutLayout";
+import AboutLayout from "../components/AboutLayout";
 
 const About = forwardRef(() => {
   return (
