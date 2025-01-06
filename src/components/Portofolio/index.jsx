@@ -223,7 +223,7 @@ const PortofolioLayout = () => {
       <div className="flex h-full" ref={mainRef}>
         {mainView && (
           <>
-            <div className="w-[40%] space-y-3 text-slate-50 pr-5 pt-3">
+            <div className="w-[40%] hidden md:block space-y-3 text-slate-50 pr-5 pt-3">
               <div
                 key={projects[currentIndex].title}
                 className="animated-translateY"
@@ -278,7 +278,7 @@ const PortofolioLayout = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="flex flex-col items-end gap-2 w-[60%] relative animated-scale"
+              className="flex flex-col items-end gap-2 md:w-[60%] w-full relative animated-scale"
             >
               <div
                 ref={scrollContainerRef}

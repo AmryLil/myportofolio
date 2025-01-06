@@ -95,17 +95,7 @@ const AboutLayout = () => {
               <div className="text-xl font-bold">ABOUT</div>
             </div>
             <p className="animated-translateY">
-              Perkenalkan Saya Ulil Amry Al Qadri, lahir di Kodeoha, 08 November
-              2003, anak kedua dari tiga bersaudara dan memiliki minat yang
-              mendalam dalam bidang teknologi informasi. Saat ini, saya sedang
-              aktif memperdalam pengetahuan dan keterampilan dalam dunia IT,
-              khususnya dalam bidang software engineering. Keinginan saya untuk
-              terus belajar dan berkembang dalam bidang ini sangat besar, karena
-              saya percaya bahwa teknologi informasi memiliki peran penting
-              dalam kemajuan dunia. Dengan tekad dan dedikasi yang kuat, saya
-              berusaha untuk menjadi ahli di bidang software engineering,
-              sehingga dapat memberikan kontribusi yang berarti dalam industri
-              teknologi informasi.
+            My name is Ulil Amry Al Qadri, born in Kodeoha on November 8, 2003. I am the second of three siblings with a deep passion for information technology, particularly in software engineering. I am dedicated to continuously learning and developing my skills in this field, believing in IT's crucial role in advancing the world. With strong determination, I aspire to excel in software engineering and make meaningful contributions to the tech industry.
             </p>
           </div>
         </div>

@@ -48,7 +48,7 @@
   animation: appear linear;
   animation: myAnimationtranslateX 3s forwards ease-in;
   animation-timeline: view();
-  animation-range: entry 0 cover 70%;
+  animation-range: entry 0 cover 20%;
 }
 
 @keyframes myAnimationtranslateX {
