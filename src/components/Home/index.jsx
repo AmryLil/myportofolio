@@ -16,7 +16,7 @@ const HomeLayouts = () => {
                 I'm a {` `}
               </span>
               <TypeAnimation
-                sequence={["Student", 1500, "Web Development", 1500]}
+                sequence={["Student", 1500, "Web Developer", 1500]}
                 wrapper="span"
                 speed={20}
                 style={{ display: "inline-block" }}

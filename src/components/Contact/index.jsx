@@ -8,7 +8,7 @@ const ContactUs = () => {
     threshold: 0.1,
   });
   return (
-    <div className="container  text-slate-50 flex md:px-28 px-6 items-center justify-center">
+    <div className="container  text-slate-50 flex md:px-28 px-6 items-center justify-center animated-translateY">
       <div className="container md:mx-auto ">
         <div className="text-center mb-12"></div>
         <div className="flex flex-wrap justify-center" ref={mainRef}>
