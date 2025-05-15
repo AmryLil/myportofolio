@@ -16,7 +16,7 @@ const projects = [
       { name: "Tailwind", url: "images/tailwind.png" },
       { name: "ReactJs", url: "images/reactjs.png" },
     ],
-    imageUrl: "images/projectPic/portofolio1.png",
+    imageUrl: "images/projectPic/portofolio1.jpg",
     url: "https://github.com/AmryLil/myportofolio",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
       { name: "Html", url: "images/html.png" },
       { name: "Tailwind", url: "images/tailwind.png" },
     ],
-    imageUrl: "images/projectPic/pixture.png",
+    imageUrl: "images/projectPic/donordarah.jpg",
     url: "https://github.com/AmryLil/pixture",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
       { name: "Tailwind", url: "images/tailwind.png" },
       { name: "JavaScript", url: "images/javascript.png" },
     ],
-    imageUrl: "images/projectPic/bapukpedia.png",
+    imageUrl: "images/projectPic/keuangan.jpg",
     url: "https://github.com/AmryLil/e_commerce",
   },
   {
@@ -55,7 +55,7 @@ const projects = [
       { name: "PHP", url: "images/php.png" },
       { name: "Mysql", url: "images/mysql.png" },
     ],
-    imageUrl: "images/projectPic/school.png",
+    imageUrl: "images/projectPic/coffeshop.jpg",
     url: "https://github.com/AmryLil/web-sekolah",
   },
   {
@@ -81,7 +81,7 @@ const projects = [
       { name: "Html", url: "images/html.png" },
       { name: "CSS", url: "images/css.png" },
     ],
-    imageUrl: "images/projectPic/hotelweb.jpeg",
+    imageUrl: "images/projectPic/handmade.jpg",
     url: "https://github.com/AmryLil/Hotel-system",
   },
   {
